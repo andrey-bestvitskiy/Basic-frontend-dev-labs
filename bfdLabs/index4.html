@@ -3,12 +3,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Моя первая веб-страница</title>
+<title>It's frames!</title>
 </head>
-<body>
-
-<h1>Заголовок страницы</h1>
-<p>Основной текст.</p>
-
-</body>
+<FRAMESET ROWS="100, *, 100">
+    <FRAME SRC = "top.html" NAME="boot"/>
+    <FRAMESET COLS="30%, 70%">
+        <FRAME SRC = "menu.html" NAME="left"/>
+        <FRAME SRC = "text.html" NAME="right"/>
+    </FRAMESET>
+    <FRAME SRC = "bottom.html" NAME="foot"/>
+</FRAMESET>
+<NOFRAMES>
+    No frames, sorry :(
+</NOFRAMES>
 </html>
